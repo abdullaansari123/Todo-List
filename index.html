@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input and JavaScript Variable</title>
+    <style type="text/css">
+        html {
+            background-color: #E4E9FD;
+            background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+            min-height: 1000px;
+            font-family: 'helvetica neue';
+            font-size: 3rem;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            font-size:3.5rem;
+        }
+        button {
+            font-size:.7rem;
+            max-width:40px ;
+            max-height:40px ;
+            border-radius: 50%;
+            border-color: transparent;
+            background-color: #A683E3;
+            color: #fff;
+            border-width: 1;
+            align-items: center;
+        }
+        .box {
+            max-width: 700px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+        }
+        .pressed {
+            text-decoration: line-through;
+            text-decoration-color: #A683E3;
+        }
+        .checkbox{
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            background: transparent;
+            font-size: 1rem;
+        }
+        #userInput{
+            width: 400px;
+            height: 45px;
+            font-size:1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>todo list</h1>
+    <div class="box">
+        <ul id="buttonList"></ul>
+        <label for="userInput">Add items:</label>
+        <input type="text" id="userInput">
+        <button onclick="addList();">+</button>
+    </div>
+    <script src="game.js">
+    </script>
+</body>
+</html>
